@@ -26,8 +26,13 @@
             placeholder="Pesquisar"
             id="pesquisar"
             class="pesquisar__input"
+            data-pesquisa
           />
-          <button title="pesquisar" class="pesquisar__botao"></button>
+          <button
+            title="pesquisar"
+            class="pesquisar__botao"
+            data-botao-pesquisa
+          ></button>
         </div>
 
         <div class="cabecalho__icones">
@@ -38,5 +43,6 @@
 
     <ul class="videos__container" alt="videos alura" data-lista></ul>
     <script src="./js/mostrarVideos.js" type="module"></script>
+    <script src="./js/buscarVideo.js" type="module"></script>
   </body>
 </html>
