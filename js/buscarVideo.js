@@ -13,6 +13,11 @@ async function buscarVideo(evento) {
     lista.removeChild(lista.firstChild);
   }
 
+  if (videos.length == 0) {
+    lista.innerHTML = `
+      <h3 class = 'mensagem__error'>Nenhum video encontrado</h3>
+    `;
+  }
   videos.forEach(element => {
     lista.appendChild(
       constroiCard(
